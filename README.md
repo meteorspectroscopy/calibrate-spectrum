@@ -1,6 +1,8 @@
 # calibrate-spectrum
 calibration of meteor spectra with laser or spectral lamp
+
 Introduction
+
 I have described a method for the analysis of meteor spectra from video images with a Python script using a GUI here: https://github.com/meteorspectroscopy/meteor-spectrum . In order to apply this method, the camera – lens – grating system has to be calibrated. This is necessary, because the spectra of meteors are nonlinear in a double sense. For meteors illuminating the grating at an angle to the plane perpendicular to the grating lines, the spectra show a hyperbolic curvature. In addition, the dispersion or scale of the spectrum in wavelength units per pixel changes nonlinearly, depending on the incidence angle of the meteor light on the grating. During the flight of the meteor this angle changes, making the simple addition of spectra difficult. These effects are visible in the following spectrum (recorded by Koji Maeda):
  
 The idea is to transform the images in such a way, that the nonlinearities in the spectra are removed and do the analysis of the spectra with these transformed images:
@@ -16,6 +18,7 @@ Starting point for the determination of the parameters of the image transformati
  
 
 The script allows the measurement of the coordinates of the spectral lines (different diffraction orders of laser lines (9 spectra with 4 orders each). The spectra are linearized by a least square fit, where the parameters of the transformation are the variables. In addition to the parameters a3 and a5 the coordinates of the optical axis, the dispersion and the rotation of the spectra from the horizontal are also determined. This parameter set is used in the script m_spec for the analysis of meteor spectra.
+
 The script allows going through all the steps:
 -	creation of images from short video frames
 -	adding spectra to create peak images
