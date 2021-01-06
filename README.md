@@ -1,6 +1,14 @@
 # calibrate-spectrum
 calibration of meteor spectra with laser or spectral lamp.
 
+<b> Update:</b> 
+
+This version runs with Python 3.7. For newer versions of Python some statements are outdated. An updated version of the repository is here:
+https://github.com/meteorspectroscopy/meteor-spectrum-calibration.
+
+The new version also contains the spectra processing, previously contained in:
+https://github.com/meteorspectroscopy/meteor-spectrum
+
 The GUI was designed with PySimpleGUI: https://github.com/PySimpleGUI
 
 <img src=https://github.com/meteorspectroscopy/calibrate-spectrum/blob/master/doc/m_calib_menu.png>
